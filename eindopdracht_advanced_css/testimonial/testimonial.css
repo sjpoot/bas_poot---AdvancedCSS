@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato");
+body {
+  display: grid;
+  grid-template-columns: 10px 1fr 10px;
+  grid-template-rows: 75% 12% 12%;
+  grid-template-areas: ". h ." ". m ." ". f .";
+  width: auto;
+  height: 425px;
+  background-color: #c3cfe2;
+  font-family: lato;
+  padding: 10px 0;
+}
+
+.testimonial {
+  grid-area: h;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0px 10px 15px 0px #666;
+}
+.testimonial__text {
+  font-size: x-large;
+  font-weight: 500;
+  color: darkslategrey;
+  line-height: 30px;
+}
+
+.image {
+  grid-area: m;
+  justify-self: center;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color: #fff;
+  border-radius: 50%;
+  border: solid #fff 5px;
+  padding-top: 20px;
+  margin-top: -100px;
+}
+
+.footer {
+  grid-area: f;
+  text-align: center;
+  background-color: #686de0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 130px;
+  margin-top: -50px;
+  padding-top: 120px;
+  box-shadow: 0px 10px 15px 0px #666;
+}
+.footer__naam {
+  font-size: larger;
+  font-weight: 500;
+  color: #fff;
+}
+.footer__website a {
+  font-size: larger;
+  text-decoration: none;
+  color: #c3cfe2;
+}/*# sourceMappingURL=testimonial.css.map */

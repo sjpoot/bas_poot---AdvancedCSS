@@ -1,0 +1,93 @@
+@keyframes buttonwidth{
+    from {right: -200px;}
+    to {right: 0px;}
+}
+
+@keyframes buttonback{
+    from {right: 0px;}
+    to {right: -200px;}
+}
+
+@mixin button_std {
+    position: relative;
+    right: -200px;
+    height: 50px;
+    text-align: left;
+    border-style: none;
+    padding: 0px;
+    display: inline-flex;
+    width: 250px;
+}
+
+@mixin image_size {
+    width:50px;
+    height:50px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: lightgrey;
+}
+
+.button{
+    position: absolute;
+    height: 640px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    :hover{
+        animation-name: buttonwidth;
+        animation-duration: 750ms;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+    
+    &--blog{
+        @include button_std();
+        background-color: #e17b77;
+    }
+    &--twitter{
+        @include button_std();
+        background-color: #00aced;
+    }
+    &--linkedin{
+        @include button_std();
+        background-color: #007bb6;
+    }
+    &--facebook{
+        @include button_std();
+        background-color: #3b5998;
+    }
+    &--github{
+        @include button_std();
+        background-color: #333;
+    }
+    &--blog img{
+        @include image_size();
+    }
+    &--twitter img{
+        @include image_size();
+    }
+
+    &--facebook img{
+        @include image_size();
+    }
+
+    &--linkedin img{
+        @include image_size();
+        text-align: center;
+    }
+    &--github img{
+        @include image_size();
+        text-align: center;
+    }
+    &__link{
+        align-self: center;
+        font: 15px sans-serif;
+        padding-left: 20px;
+        color:#fff;
+    }
+}

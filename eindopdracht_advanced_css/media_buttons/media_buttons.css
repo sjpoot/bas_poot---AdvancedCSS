@@ -1,0 +1,140 @@
+@-webkit-keyframes buttonwidth {
+  from {
+    right: -200px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@keyframes buttonwidth {
+  from {
+    right: -200px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@-webkit-keyframes buttonback {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -200px;
+  }
+}
+@keyframes buttonback {
+  from {
+    right: 0px;
+  }
+  to {
+    right: -200px;
+  }
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: lightgrey;
+}
+
+.button {
+  position: absolute;
+  height: 640px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.button :hover {
+  -webkit-animation-name: buttonwidth;
+          animation-name: buttonwidth;
+  -webkit-animation-duration: 750ms;
+          animation-duration: 750ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+.button--blog {
+  position: relative;
+  right: -200px;
+  height: 50px;
+  text-align: left;
+  border-style: none;
+  padding: 0px;
+  display: inline-flex;
+  width: 250px;
+  background-color: #e17b77;
+}
+.button--twitter {
+  position: relative;
+  right: -200px;
+  height: 50px;
+  text-align: left;
+  border-style: none;
+  padding: 0px;
+  display: inline-flex;
+  width: 250px;
+  background-color: #00aced;
+}
+.button--linkedin {
+  position: relative;
+  right: -200px;
+  height: 50px;
+  text-align: left;
+  border-style: none;
+  padding: 0px;
+  display: inline-flex;
+  width: 250px;
+  background-color: #007bb6;
+}
+.button--facebook {
+  position: relative;
+  right: -200px;
+  height: 50px;
+  text-align: left;
+  border-style: none;
+  padding: 0px;
+  display: inline-flex;
+  width: 250px;
+  background-color: #3b5998;
+}
+.button--github {
+  position: relative;
+  right: -200px;
+  height: 50px;
+  text-align: left;
+  border-style: none;
+  padding: 0px;
+  display: inline-flex;
+  width: 250px;
+  background-color: #333;
+}
+.button--blog img {
+  width: 50px;
+  height: 50px;
+}
+.button--twitter img {
+  width: 50px;
+  height: 50px;
+}
+.button--facebook img {
+  width: 50px;
+  height: 50px;
+}
+.button--linkedin img {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.button--github img {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.button__link {
+  align-self: center;
+  font: 15px sans-serif;
+  padding-left: 20px;
+  color: #fff;
+}/*# sourceMappingURL=media_buttons.css.map */
